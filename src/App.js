@@ -8,7 +8,7 @@ import './App.css'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App flex flex-wrap mb-4">
     <Menu router={AppRouter.filter( data => data.menu )}/>
     {
       AppRouter.map((route, index) => 

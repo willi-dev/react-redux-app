@@ -9,5 +9,5 @@ export const MarsRoverRouter = [
     exact: false,
     name: 'Mars Rover Camera',
     menu: false
-  },
+  }
 ]

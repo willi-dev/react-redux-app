@@ -15,11 +15,11 @@ const Wrapper = styled.div`
 
 const Menu = ({ router }) => {
   return (
-    <Wrapper>
-      <ul className="list-menu">
+    <Wrapper className="w-full bg-red-600">
+      <ul className="list-menu flex text-white">
         {
           router.map(( data, index) => 
-            <li key={index}>
+            <li className="mr-6" key={index}>
               <Link to={data.path}>{data.name}</Link>
             </li>
           )

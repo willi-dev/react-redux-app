@@ -1,6 +1,6 @@
 import { applyMiddleware, createStore } from 'redux'
 import thunk from 'redux-thunk'
-import RootReducer from './RooReducer'
+import rootReducer from './RootReducer'
 
 const middlewares = []
 if (process.env.NODE_ENV !== 'production') {
@@ -10,4 +10,4 @@ if (process.env.NODE_ENV !== 'production') {
 
 const middleware = applyMiddleware(thunk, ...middlewares)
 
-export default createStore( RootReducer, middleware )
+export default createStore( rootReducer, middleware )
