@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { Route } from 'react-router-dom'
+import { AppRouter } from './router'
+import Menu from './_shared/Components/Menu'
+import './App.css'
+
+// import Error404 from './pages/Error/Error404'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Menu router={AppRouter.filter( data => data.menu )}/>
+    {
+      AppRouter.map((route, index) => 
+        <Route path={route.path} component={route.component} exact={route.exact} key={index} />
+      )
+    }
+    {/* <Route path="*" component={Error404} /> */}
     </div>
   );
 }
