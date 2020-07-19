@@ -1,4 +1,8 @@
-import { FETCH_MARS_ROVER_ALL_START, FETCH_MARS_ROVER_ALL_SUCCESS, FETCH_MARS_ROVER_ALL_ERROR } from './Action'
+import { 
+  FETCH_MARS_ROVER_ALL_START, 
+  FETCH_MARS_ROVER_ALL_SUCCESS, 
+  FETCH_MARS_ROVER_ALL_ERROR 
+} from './Action'
 
 const initialState = {
   data: null,

@@ -25,7 +25,6 @@ const MarsRover = props => {
             <Route path={route.path} component={route.component} exact={route.exact} key={index} />
           )
         }
-        <Route component={MarsRoverRouter[0].component} />
       </Switch>
     </div>
   )
