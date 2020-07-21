@@ -4,7 +4,7 @@ export const FETCH_MARS_ROVER_ALL_START = 'FETCH_MARS_ROVER_ALL_START'
 export const FETCH_MARS_ROVER_ALL_SUCCESS = 'FETCH_MARS_ROVER_ALL_SUCCESS'
 export const FETCH_MARS_ROVER_ALL_ERROR = 'FETCH_MARS_ROVER_ALL_ERROR'
 
-const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2020-6-9&api_key=H0DRNQPKusaUaxrQelab2CkKhsFpfoer9zgTOnoy`
+const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?earth_date=2020-6-9&api_key=H0DRNQPKusaUaxrQelab2CkKhsFpfoer9zgTOnoy&page=1`
 
 /**
  * fetchMarsRoverAll

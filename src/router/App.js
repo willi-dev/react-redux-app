@@ -1,7 +1,8 @@
-import { HOME, MARS_ROVER, DETAIL_PHOTO, ABOUT } from '../_shared/Constants/Router'
+import { HOME, MARS_ROVER,  } from '../_shared/Constants/Router'
 
 import Home from '../pages/Home'
 import MarsRover from '../pages/MarsRover'
+import Error404 from '../pages/Error/Error404'
 
 export const AppRouter = [
   {
@@ -17,5 +18,12 @@ export const AppRouter = [
     exact: false,
     name: 'Mars Rover',
     menu: true,
+  },
+  {
+    path: false,
+    component: Error404,
+    exact: false,
+    name: 'Not Found',
+    menu: false
   }
 ]

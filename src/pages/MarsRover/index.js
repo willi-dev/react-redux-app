@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link, Route, Switch } from 'react-router-dom'
 import { MarsRoverRouter } from '../../router'
-import { MARS_ROVER_CAMERA } from '../../_shared/Constants/Router'
+import { MARS_ROVER } from '../../_shared/Constants/Router'
 
 const listCamera = ['fhaz', 'rhaz', 'mast', 'chemcam', 'mahli', 'mardi', 'navcam', 'pancam', 'minites']
 
@@ -14,7 +14,7 @@ const MarsRover = props => {
         {
           listCamera.map((camera, index) => 
             <li key={index} style={{ display: `inline-block`, padding: `0 10px`}}>
-              <Link to={`${MARS_ROVER_CAMERA}/${camera}`}>{camera.toUpperCase()}</Link>
+              <Link to={`${MARS_ROVER}/${camera}`}>{camera.toUpperCase()}</Link>
             </li>
           )
         }

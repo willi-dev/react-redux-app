@@ -4,8 +4,6 @@ import { AppRouter } from './router'
 import Menu from './_shared/Components/Menu'
 import './App.css'
 
-import Error404 from './pages/Error/Error404'
-
 function App() {
   return (
     <div className="App flex flex-wrap mb-4">
@@ -16,7 +14,6 @@ function App() {
           <Route path={route.path} component={route.component} exact={route.exact} key={index} />
         )
       }
-      <Route component={Error404} />
     </Switch>
     </div>
   );
