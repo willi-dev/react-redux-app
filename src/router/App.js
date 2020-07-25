@@ -20,7 +20,7 @@ export const AppRouter = [
     menu: true,
   },
   {
-    path: false,
+    path: "",
     component: Error404,
     exact: false,
     name: 'Not Found',

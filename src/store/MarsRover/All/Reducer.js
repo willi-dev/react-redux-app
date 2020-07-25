@@ -10,7 +10,7 @@ const initialState = {
   error: null
 }
 
-const homeReducer = (state = initialState, action) => {
+const marsRoverAllReducer = (state = initialState, action) => {
   switch(action.type) {
     case FETCH_MARS_ROVER_ALL_START:
       return {
@@ -36,4 +36,4 @@ const homeReducer = (state = initialState, action) => {
   }
 }
 
-export default homeReducer
+export default marsRoverAllReducer

@@ -11,16 +11,14 @@ const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?ear
  */
 export const fetchMarsRoverAll = () => {
   return async(dispatch, getState) => {
-    // if (getState().home.data === null) {
-      dispatch(fetchMarsRoverAllStart())
-      axios.get(url)
-        .then( 
-          response => dispatch(fetchMarsRoverAllSuccess(response.data.photos))
-        )
-        .catch( 
-          error => dispatch(fetchMarsRoverAllError(error.response.data)) 
-        )
-    // }
+    dispatch(fetchMarsRoverAllStart())
+    axios.get(url)
+      .then( 
+        response => dispatch(fetchMarsRoverAllSuccess(response.data.photos))
+      )
+      .catch( 
+        error => dispatch(fetchMarsRoverAllError(error.response.data)) 
+      )
   }
 }
 
