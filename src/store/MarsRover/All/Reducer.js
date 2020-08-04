@@ -4,7 +4,7 @@ import {
   FETCH_MARS_ROVER_ALL_ERROR 
 } from './Action'
 
-const initialState = {
+export const initialState = {
   data: null,
   loading: false,
   error: null
